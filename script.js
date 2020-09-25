@@ -15,7 +15,7 @@ let minPosition = (min * 360 / 60) + ((sec * 360 / 60) / 60);
 let secPosition = sec * 360 / 60;
 
 //This version is prone to fault, as it relies on the browser's captured date.
-//Ppenning another tab for example and playing around a little then coming back to the clock tab will throw off the time.
+//Openning another tab for example and playing around a little then coming back to the clock tab will throw off the time.
 //Fixing this relies on ditching the "transformation" css and calling the date within the function.
 //If you decide otherwise to call the date within this function you will end up having the return to zero glitch after a full minute cycle.
 function runTheClock() {
